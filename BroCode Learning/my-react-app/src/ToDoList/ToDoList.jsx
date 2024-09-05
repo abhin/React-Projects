@@ -11,18 +11,37 @@ function ToDoList() {
 
     const addTask = () => {
 
+        if (!newTask.trim()) {
+            return;
+        }
+
+        setTasks(ts => [...ts, newTask]);
+        document.querySelector("input[type='text']").value = "";
+        setNewtask("");
     }
 
     const deleteTask = (index) => {
-
+        setTasks(ts => ts.filter((t, i) => i !== index));
     }
 
     const moveTaskUp = (index) => {
+        if (index > 0) {
+            const updateTasks = [...tasks];
 
+            [updateTasks[index-1], updateTasks[index]] = [updateTasks[index], updateTasks[index-1]];
+
+            setTasks(() => updateTasks)
+        }
     }
 
     const moveTaskDown = (index) => {
+        if (index < (tasks.length - 1)) {
+            const updateTasks = [...tasks];
 
+            [updateTasks[index+1], updateTasks[index]] = [updateTasks[index], updateTasks[index+1]];
+
+            setTasks(() => updateTasks)
+        }
     }
 
     return(
@@ -33,8 +52,7 @@ function ToDoList() {
                     <input
                         type="text"
                         placeholder="Enter a task..."
-                        value={newTask}
-                        onchange={handleInputChange}
+                        onChange={handleInputChange}
                         />
                 </div>
                 <button className={style.addButton} onClick={addTask}>

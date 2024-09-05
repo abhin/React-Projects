@@ -2,10 +2,12 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 100px;
+    background-color: hsl(0, 0%, 10%);
 }
 
 .toDoList h1 {
     font-size: 4rem;
+    color: white;
 }
 
 .toDoList button {
@@ -16,7 +18,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.5 ease;
+    transition: background-color 0.5s ease;
 }
 
 .addButton {
@@ -35,6 +37,43 @@
     background-color: hsl(10, 90%, 40%);
 }
 
-.deleteButton:hover {
-    background-color: hsl(10, 90%, 40%);
+.moveButton:hover {
+    background-color: hsl(207, 90%, 54%);
+}
+
+input[type="text"] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.5);
+    border-radius: 5px;
+    color: hsla(0, 0%, 0%, 0.5);
+}
+
+.toDoList ol {
+    padding: 0;
+}
+
+.toDoList li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: hsl(0, 0%, 97%);
+    margin-bottom: 10px;
+    border: 3px solid hsla(0, 0%, 85%, 0.75);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.deleteButton, .moveButton {
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
 }

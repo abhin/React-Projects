@@ -37,7 +37,8 @@ function Car() {
                         make: carMake, 
                         model: carModel};
 
-        // setCars(c => c.filter(car => (car.year !== carYear && car.make !== carMake && car.model !== carModel)));
+        // const filteredCar = cars.filter(car => (car.year !== carYear && car.make !== carMake && car.model !== carModel));
+
         // console.log(typeof cars)
         setCars(cs => ([...cs, newCar]));
 
