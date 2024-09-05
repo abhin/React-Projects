@@ -1,0 +1,40 @@
+.toDoList {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.toDoList h1 {
+    font-size: 4rem;
+}
+
+.toDoList button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+
+.addButton {
+    background-color: hsl(125, 47%, 54%);
+}
+
+.addButton:hover {
+    background-color: hsl(125, 47%, 44%);
+}
+
+.deleteButton {
+    background-color: hsl(10, 90%, 50%);
+}
+
+.deleteButton:hover {
+    background-color: hsl(10, 90%, 40%);
+}
+
+.deleteButton:hover {
+    background-color: hsl(10, 90%, 40%);
+}

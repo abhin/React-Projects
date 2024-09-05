@@ -1,0 +1,28 @@
+.listCategory {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    margin: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    border: 3px solid;
+    border-bottom: 0;
+    border-radius: 5px;
+    background-color: hsl(185, 100%, 50%);
+}
+
+.listItems {
+    border-top: 0;
+    border-bottom: 3px solid;
+    border-top: 0;
+}
+
+.listItems li {
+    font-size: 2em;
+    font-weight:normal;
+    list-style: none;
+    color: hsl(0, 0%, 25%);
+    text-align: center;
+    margin: 0px;
+    text-transform: capitalize;
+}
