@@ -17,6 +17,7 @@ import ColorPicker from './ColorPicker/ColorPicker.jsx'
 import Car from './Car/Car.jsx'
 import ToDoList from './ToDoList/ToDoList.jsx'
 import UseEffectExample from './UseEffectExample/UseEffectExample.jsx'
+import UseEffectReturnStmtExample from './UseEffectReturnStmtExample/UseEffectReturnStmtExample.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -25,7 +26,9 @@ createRoot(document.getElementById('root')).render(
     
     <UserGreeting isLoggedIn={true} />
 
-    <UseEffectExample />
+    <UseEffectReturnStmtExample />
+
+    {/* <UseEffectExample /> */}
 
     <ToDoList />
 
