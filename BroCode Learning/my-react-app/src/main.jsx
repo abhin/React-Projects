@@ -16,6 +16,7 @@ import Counter from './Counter/Counter.jsx'
 import ColorPicker from './ColorPicker/ColorPicker.jsx'
 import Car from './Car/Car.jsx'
 import ToDoList from './ToDoList/ToDoList.jsx'
+import UseEffectExample from './UseEffectExample/UseEffectExample.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -23,6 +24,8 @@ createRoot(document.getElementById('root')).render(
     <Header />
     
     <UserGreeting isLoggedIn={true} />
+
+    <UseEffectExample />
 
     <ToDoList />
 
