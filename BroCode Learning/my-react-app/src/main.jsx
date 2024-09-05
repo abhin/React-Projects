@@ -18,12 +18,15 @@ import Car from './Car/Car.jsx'
 import ToDoList from './ToDoList/ToDoList.jsx'
 import UseEffectExample from './UseEffectExample/UseEffectExample.jsx'
 import UseEffectReturnStmtExample from './UseEffectReturnStmtExample/UseEffectReturnStmtExample.jsx'
+import DigitalClock from './DigitalClock/DigitalClock.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     <Header />
     
+    <DigitalClock />
+
     <UserGreeting isLoggedIn={true} />
 
     <UseEffectReturnStmtExample />
