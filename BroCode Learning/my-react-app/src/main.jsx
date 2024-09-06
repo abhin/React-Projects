@@ -19,11 +19,14 @@ import ToDoList from './ToDoList/ToDoList.jsx'
 import UseEffectExample from './UseEffectExample/UseEffectExample.jsx'
 import UseEffectReturnStmtExample from './UseEffectReturnStmtExample/UseEffectReturnStmtExample.jsx'
 import DigitalClock from './DigitalClock/DigitalClock.jsx'
+import ComponentA from './UseContextExample/ComponentA.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     <Header />
+
+    <ComponentA />
     
     <DigitalClock />
 
