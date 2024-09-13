@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import ClassBasedComponents from './Components/class-based-components'
+import ClassBasedComponents from './components/class-based-component'
+import FunctionalComponent from './components/FunctionalComponent'
+import ClassBasedComponent from './components/class-based-component'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +11,8 @@ function App() {
     <>
       <div>
         <h1>React JS Concepts 2024</h1>
-        <ClassBasedComponents />
+        <ClassBasedComponent />
+        <FunctionalComponent />
       </div>
     </>
   )

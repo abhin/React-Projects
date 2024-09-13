@@ -1,7 +1,7 @@
 import { Component } from "react";
 
 
-class ClassBasedComponents extends Component {
+class ClassBasedComponent extends Component {
     render() {
         return <div>
             <h3>Class Based Components</h3>
@@ -9,4 +9,4 @@ class ClassBasedComponents extends Component {
     }
 }
 
-export default ClassBasedComponents;
+export default ClassBasedComponent;
