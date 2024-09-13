@@ -21,21 +21,28 @@ import UseEffectReturnStmtExample from './UseEffectReturnStmtExample/UseEffectRe
 import DigitalClock from './DigitalClock/DigitalClock.jsx'
 import UseContextExample from './UseContextExample/UseContextExample.jsx'
 import UseRefExample from './UseRefExample/UseRefExample.jsx'
+import StopWatch from './StopWatch/StopWatch.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
-    <Header />
+    {/* <Header /> */}
 
-    <UseRefExample />
+    <StopWatch />
     
-     <UseContextExample />
+    {/* <UseRefExample />
     
+    <UseContextExample />
+    
+    <UseEffectExample />
+    
+    <DigitalClock />
+
     <UserGreeting isLoggedIn={true} />
 
     <UseEffectReturnStmtExample />
 
-    {/* <UseEffectExample /> */}
+     <UseEffectExample /> 
 
     <ToDoList />
 
@@ -63,6 +70,6 @@ createRoot(document.getElementById('root')).render(
     <Student name="Larry" />
     <Student age={28} isStudent={true}/>
 
-    <Footer />
+    <Footer /> */}
   </StrictMode>,
 )
