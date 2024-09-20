@@ -1,21 +1,23 @@
-import { useState } from 'react'
-import './App.css'
-import ClassBasedComponents from './components/class-based-component'
-import FunctionalComponent from './components/FunctionalComponent'
-import ClassBasedComponent from './components/class-based-component'
+import { useState } from "react";
+import "./App.css";
+import ProductList from "./ProductList/ProductList";
+// import FunctionalComponent from "./components/FunctionalComponent";
+// import ClassBasedComponent from "./components/class-based-component";
+const dummyproductData = ['Product 1', 'Product 2', 'Product 3', 'Product 4'];
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
         <h1>React JS Concepts 2024</h1>
-        <ClassBasedComponent />
-        <FunctionalComponent />
+        {/* <ClassBasedComponent />
+        <FunctionalComponent /> */}
+        <ProductList productData={dummyproductData}/>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

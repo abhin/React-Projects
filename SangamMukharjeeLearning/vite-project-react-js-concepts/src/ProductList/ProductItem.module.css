@@ -1,0 +1,11 @@
+.button {
+    background-color: hsl(240, 100%, 70%);
+    margin: 10px;
+    color: white;
+}
+
+.productTitle {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
