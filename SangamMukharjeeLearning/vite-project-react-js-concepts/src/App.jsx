@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import ClassBasedComponent from "./ComponentsTypesInReact/class-based-component";
 import ProductList from "./ProductList/ProductList";
-// import FunctionalComponent from "./components/FunctionalComponent";
-// import ClassBasedComponent from "./components/class-based-component";
 const dummyproductData = ['Product 1', 'Product 2', 'Product 3', 'Product 4'];
 
 function App() {
@@ -12,8 +11,8 @@ function App() {
     <>
       <div>
         <h1>React JS Concepts 2024</h1>
-        {/* <ClassBasedComponent />
-        <FunctionalComponent /> */}
+        <ClassBasedComponent />
+        <FunctionalComponent />
         <ProductList productData={dummyproductData}/>
       </div>
     </>
