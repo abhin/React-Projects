@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 
 function ProductList({productData=[]}) {
     const [showList, setShowList] = useState(false);
-    const [task, setTask] = useState("Show");
+    const [visibility, setVisibility] = useState("Show");
 
     useEffect(() => {
-        setTask(showList && "Hide" || "Show");
+        setVisibility(showList && "Hide" || "Show");
     }, [showList]);
 
     const hanldeClick = () => {
@@ -18,7 +18,7 @@ function ProductList({productData=[]}) {
     return (
         <div>
             <h3 className="title">eCommerce project</h3>
-            <button onClick={hanldeClick}>{task} Product List</button>
+            <button onClick={hanldeClick}>{visibility} Product List</button>
             {showList && 
                 <ul>
                     {productData.map((product, index) => {
