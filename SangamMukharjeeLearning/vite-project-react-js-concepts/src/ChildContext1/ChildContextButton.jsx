@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { globalContext } from "../GlobalContext/GlobalContext";
+import { GlobalContext } from "../GlobalContext/GlobalContext";
 
 function ChildContextButton() {
-  const { theme, setTheme } = useContext(globalContext);
+  const { theme, setTheme } = useContext(GlobalContext);
   return (
     <>
       <button
