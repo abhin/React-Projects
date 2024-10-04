@@ -21,7 +21,7 @@ function Form() {
           name="name"
           id="name"
           placeholder="Enter name"
-          // onChange={handleChange}
+          onChange={handleChange}
         />
 
         <input

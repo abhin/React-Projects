@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         <Login />
-        <ExampleForm />
+        {/* <ExampleForm /> */}
       </div>
     </>
   )

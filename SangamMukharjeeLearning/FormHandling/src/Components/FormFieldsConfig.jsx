@@ -7,7 +7,6 @@ export const loginFormFields = [
             type: 'email',
             name: 'email',
             placeholder: 'Enter Username/ Email.',
-            value: ''
         }    
         
     },
@@ -19,7 +18,6 @@ export const loginFormFields = [
             type: 'password',
             name: 'password',
             placeholder: 'Enter Password',
-            value: ''
         }
     }
 ];

@@ -1,10 +1,6 @@
 import FormFrame from "./FormFrame";
 import {loginFormFields} from "./FormFieldsConfig.jsx";
 
-const handleChange = (e) => {
-    let userNameFiels
-}
-
 function Login() {
     return (
         <>
