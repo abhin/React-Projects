@@ -14,14 +14,14 @@ function Form() {
   return (
     <>
       <div>
-        <h1>Form</h1>
+        <h1>Example Form</h1>
         <p>Name: {formData.name}</p>
         <input
           value={formData.name}
           name="name"
           id="name"
           placeholder="Enter name"
-          onChange={handleChange}
+          // onChange={handleChange}
         />
 
         <input
