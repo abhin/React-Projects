@@ -13,4 +13,9 @@ export function FormDataHandlingProvider({ children }) {
   );
 }
 
+export function handleSubmit (e, formData) {
+  e.preventDefault();
+  console.log(formData);
+}
+
 

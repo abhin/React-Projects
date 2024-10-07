@@ -22,7 +22,7 @@ function InputField({ config = {} }) {
             });
         }}
         onClick={() => {
-          config?.defaultHandler === "onClick" && setFormData({});
+          config?.attr?.id == 'reset' && config?.defaultHandler === "onClick" && setFormData({});
         }}
       />
     </>
