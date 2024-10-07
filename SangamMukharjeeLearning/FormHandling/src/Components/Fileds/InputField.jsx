@@ -1,6 +1,6 @@
 import PropType from "prop-types";
 import { useContext } from "react";
-import {FormDataHandlingContext} from "../GlobalContext";
+import { FormDataHandlingContext } from "../GlobalContext";
 
 // InputField component
 function InputField({ config = {} }) {
@@ -8,15 +8,21 @@ function InputField({ config = {} }) {
 
   return (
     <>
-      <label htmlFor={config.attr.id}>{config.label}</label>
+      {config?.label && (
+        <label htmlFor={config?.attr?.id}>{config?.label}</label>
+      )}
       <input
-        {...config.attr}
-        value={formData[config.attr.name] || ''}
+        {...config?.attr}
+        value={formData[config?.attr?.name] || config?.attr?.value || ""}
         onChange={(e) => {
-          setFormData({
-            ...formData,
-            [config.attr.name]: e.target.value,
-          });
+          config?.defaultHandler === "onChange" &&
+            setFormData({
+              ...formData,
+              [config?.attr?.name]: e?.target?.value,
+            });
+        }}
+        onClick={() => {
+          config?.defaultHandler === "onClick" && setFormData({});
         }}
       />
     </>
