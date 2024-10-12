@@ -1,7 +1,11 @@
-import React from 'react'
+import Header from "../components/Header";
+
 
 export default function Comments() {
   return (
-    <h3>Comments List</h3>
+    <>
+    <Header />
+    <h3>Comments List Page</h3>
+    </>
   )
 }
