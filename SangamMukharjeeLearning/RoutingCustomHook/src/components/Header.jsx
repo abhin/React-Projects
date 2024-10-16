@@ -18,18 +18,10 @@ export default function Header() {
         <button
           style={{ backgroundColor: "black", color: "white", margin: "5px" }}
           onClick={() => {
-            nav("/recipes/list");
+            nav("/recipes");
           }}
         >
           Recipies
-        </button>
-        <button
-          style={{ backgroundColor: "black", color: "white", margin: "5px" }}
-          onClick={() => {
-            nav("/comments");
-          }}
-        >
-          Comments
         </button>
       </header>
       

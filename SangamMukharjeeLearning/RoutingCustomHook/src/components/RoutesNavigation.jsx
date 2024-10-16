@@ -2,12 +2,11 @@ import { useRoutes } from "react-router-dom";
 import Home from "../pages/Home";
 import Comments from "../pages/Comments";
 import NotFound from "../pages/NotFound";
-import RecipeLayout from "../pages/RecipeLayout";
-import RecipeList from "../pages/RecipeList";
+import Recipes from "../pages/Recipes";
 import RecipeDetails from "../pages/RecipeDetails";
+import RecipeLayout from "../pages/RecipeLayout";
 
 export default function RoutesNavigation() {
-  
   const nav = useRoutes([
     {
       path: "/",
@@ -18,10 +17,6 @@ export default function RoutesNavigation() {
       element: <Home />,
     },
     {
-      path: "/comments",
-      element: <Comments />,
-    },
-    {
       path: "*",
       element: <NotFound />,
     },
@@ -30,12 +25,16 @@ export default function RoutesNavigation() {
       element: <RecipeLayout />,
       children: [
         {
-          path: "list",
-          element: <RecipeList />,
+          path: "/recipes",
+          element: <Recipes />
         },
         {
           path: "recipe/:id",
           element: <RecipeDetails />,
+        },
+        {
+          path: "recipe/:id/comments",
+          element: <Comments /> 
         },
       ],
     },
