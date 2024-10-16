@@ -4,12 +4,13 @@ export default function Header() {
   const nav = useNavigate();
   return (
     <>
+      
       <header>
         <h4>Recipes and Comments Site</h4>
         <button
           style={{ backgroundColor: "black", color: "white", margin: "5px" }}
           onClick={() => {
-            nav("/");
+            nav("/home");
           }}
         >
           Home
@@ -31,6 +32,7 @@ export default function Header() {
           Comments
         </button>
       </header>
+      
     </>
   );
 }
