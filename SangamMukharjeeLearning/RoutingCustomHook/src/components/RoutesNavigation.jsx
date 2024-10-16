@@ -1,25 +1,44 @@
-import { Outlet, Route, Routes } from "react-router-dom";
-import Layout from "../pages/RecipeLayout";
+import { useRoutes } from "react-router-dom";
 import Home from "../pages/Home";
 import Comments from "../pages/Comments";
-import RecipeList from "../pages/RecipeList";
-import RecipeLayout from "../pages/RecipeLayout";
-import RecipeDetails from "../pages/RecipeDetails";
 import NotFound from "../pages/NotFound";
+import RecipeLayout from "../pages/RecipeLayout";
+import RecipeList from "../pages/RecipeList";
+import RecipeDetails from "../pages/RecipeDetails";
 
 export default function RoutesNavigation() {
-  return (
-    <div>
-      <Routes>
-        <Route path="/recipes" element={<RecipeLayout />}>
-          <Route path="list" element={<RecipeList />} />
-          <Route path="recipe/:id" element={<RecipeDetails />} />
-        </Route>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/comments" element={<Comments />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </div>
-  );
+  
+  const nav = useRoutes([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/home",
+      element: <Home />,
+    },
+    {
+      path: "/comments",
+      element: <Comments />,
+    },
+    {
+      path: "*",
+      element: <NotFound />,
+    },
+    {
+      path: "/recipes",
+      element: <RecipeLayout />,
+      children: [
+        {
+          path: "list",
+          element: <RecipeList />,
+        },
+        {
+          path: "recipe/:id",
+          element: <RecipeDetails />,
+        },
+      ],
+    },
+  ]);
+  return nav;
 }
