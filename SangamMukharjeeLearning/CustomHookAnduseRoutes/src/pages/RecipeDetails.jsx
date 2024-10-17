@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useApiFetch from "../CustomHooks/useFetchApi";
 
 export default function RecipeDetails() {
@@ -21,11 +21,13 @@ export default function RecipeDetails() {
           <p className="card-text">
           <b>Instructions:</b> {data?.instructions}
           </p>
-          <a href="#" className="btn btn-primary">
+          <Link to={'comments'} className="btn btn-primary">
             Veiw Comments
-          </a>
+          </Link>
         </div>
-        <div className="card-footer text-muted">2 days ago</div>
+        <div className="card-footer text-muted"><b>Preparation Time:</b> {data?.prepTimeMinutes} Minutes</div>
+        <div className="card-footer text-muted"><b>Cooking Time:</b> {data?.cookTimeMinutes} Minutes</div>
+      
       </div>
     </>
   );
